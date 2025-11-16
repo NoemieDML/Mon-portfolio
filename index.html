@@ -30,14 +30,20 @@
 
 <body>
   <header>
-
     <nav>
-      <img src="images/IMG_9629.jpg" alt="Photo de moi" style="max-width: 150px;">
-      <a href="index.html">Accueil</a>
-      <a href="#profil">Profil</a>
-      <a href="#competences">Compétences</a>
-      <a href="#portfolio">Porfolio</a>
-      <a href="#contact">Contact</a>
+      <img src="images/logo.jpg" alt="Photo de moi">
+      <div class="nav-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#portfolio">Porfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
     <h1>Noémie De Mol</h1>
@@ -53,7 +59,7 @@
 
       <section class="Moi-img-texte">
         <div class="Moi-img">
-          <img src="images/IMG_9629.jpg" alt="Photo de moi" style="max-width: 350px;">
+          <img src="images/logo.jpg" alt="Photo de moi" style="max-width: 350px;">
         </div>
         <div class="Moi-texte">
           <p>Hello ! Je m’appelle Noémie De Mol, j’ai 19 ans et je suis développeuse web et web mobile diplômée.
@@ -203,5 +209,10 @@
   </footer>
 
 </body>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
 
 </html>

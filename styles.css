@@ -60,26 +60,64 @@ header .qui {
   cursor: pointer;
 }
 
+/* Style de base du nav */
 nav {
   background-color: #bfad97;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* pousse les liens vers la droite */
+  justify-content: space-between; /* logo à gauche, liens à droite */
   padding: 10px 20px;
-  gap: 15px; /* espace entre les liens */
+  flex-wrap: wrap; /* permet aux éléments de passer à la ligne si besoin */
 }
 
 nav img {
   width: 50px;
   border-radius: 50%;
-  margin-right: 600px; /* pousse le logo complètement à gauche */
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 nav a {
-  display: flex;
-  text-align: right;
-  color: black; /* ou la couleur que tu souhaites */
-  margin-right: 30px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Menu hamburger */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Responsive pour les écrans ≤ 768px */
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav .nav-links.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
 }
 
 main h1 {
