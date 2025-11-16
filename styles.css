@@ -27,11 +27,13 @@ a {
 header {
   font-family: "Itim-Regular", sans-serif;
   text-align: center;
-  max-width: 100%;
-  height: 400px;
+  height: 400px; /* tu peux mettre min-height si besoin */
   background-image: url("images/header.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* couvre toute la zone */
+  background-position: center; /* centre l’image */
+  background-attachment: scroll;
+  image-rendering: auto; /* améliore le rendu de l’image */
 }
 
 header h1 {
