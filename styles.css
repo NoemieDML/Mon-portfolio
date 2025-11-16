@@ -64,59 +64,22 @@ nav {
   background-color: #bfad97;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo à gauche, liens à droite */
+  justify-content: flex-end; /* pousse les liens vers la droite */
   padding: 10px 20px;
-  flex-wrap: wrap;
+  gap: 15px; /* espace entre les liens */
 }
 
 nav img {
   width: 50px;
   border-radius: 50%;
-  margin: 0; /* supprime le gros margin */
-}
-
-.nav-links {
-  display: flex;
-  gap: 15px;
+  margin-right: 600px; /* pousse le logo complètement à gauche */
 }
 
 nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* Bouton menu pour mobile */
-.nav-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    width: 100%;
-    flex-direction: column;
-    display: none; /* caché par défaut */
-    margin-top: 10px;
-    gap: 10px;
-  }
-
-  .nav-links a {
-    margin: 0;
-    text-align: center;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
+  display: flex;
+  text-align: right;
+  color: black; /* ou la couleur que tu souhaites */
+  margin-right: 30px;
 }
 
 main h1 {
