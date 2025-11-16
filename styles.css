@@ -68,6 +68,7 @@ nav {
   justify-content: space-between; /* logo à gauche, liens à droite */
   padding: 10px 20px;
   flex-wrap: wrap; /* permet aux éléments de passer à la ligne si besoin */
+  gap: 15px;
 }
 
 nav img {
