@@ -83,9 +83,10 @@ nav .nav-links {
 }
 
 nav a {
-  color: black;
-  text-decoration: none;
-  padding: 5px 10px;
+  display: flex;
+  text-align: right;
+  color: black; /* ou la couleur que tu souhaites */
+  margin-right: 30px;
 }
 
 /* Menu hamburger */
